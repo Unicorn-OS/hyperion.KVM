@@ -1,0 +1,16 @@
+---
+core:
+  enable: true
+  gui: true
+
+gpu:
+  enable: false
+  virtio: false
+
+network:
+  bridge: true
+  openvswitch: false
+
+tool:
+  libguestfs: true
+  monitor: true

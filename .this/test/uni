@@ -1,0 +1,8 @@
+---
+- hosts: local
+  gather_facts: yes
+
+  roles:
+  - role: this
+  - role: option
+  - role: kvm

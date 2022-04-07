@@ -1,0 +1,4 @@
+---
+dependencies:
+- role: tool/libguestfs
+- role: tool/monitor
