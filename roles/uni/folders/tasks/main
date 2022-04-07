@@ -1,0 +1,12 @@
+---
+- name: Create Hyperion folders
+  ansible.builtin.file:
+    path: '{{item}}'
+    state: directory
+  with_items:
+  - "/home/{{ansible_user}}/.uni"
+  - "/home/{{ansible_user}}/.uni/iso"
+  - "/home/{{ansible_user}}/.uni/vm/kvm"
+  - "/home/{{ansible_user}}/.uni/vm/lxd"
+  - "/home/{{ansible_user}}/.uni/vm/xen"
+  - "/home/{{ansible_user}}/.uni/torr"
