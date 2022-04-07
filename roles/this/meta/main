@@ -1,4 +1,4 @@
 ---
 dependencies:
 - role: my/option
-- role: uni/folders
+- role: uni
