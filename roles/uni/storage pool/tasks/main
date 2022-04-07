@@ -1,14 +1,14 @@
 ---
 - name: Create Storage pool - iso
   ansible.builtin.command: virsh pool-define-as --name iso --type dir --target "/home/{{ansible_user}}/.uni/iso"
-    args:
-      creates: /etc/libvirt/storage/iso.xml
+  args:
+    creates: /etc/libvirt/storage/iso.xml
   notify: Start Storage pool - iso
 
 - name: Create Storage pool - kvm
-  ansible.builtin.command: virsh pool-define-as --name iso --type dir --target "/home/{{ansible_user}}/.uni/vm/kvm"
-    args:
-      creates: /etc/libvirt/storage/kvm.xml
+  ansible.builtin.command: virsh pool-define-as --name kvm --type dir --target "/home/{{ansible_user}}/.uni/vm/kvm"
+  args:
+    creates: /etc/libvirt/storage/kvm.xml
   notify: Start Storage pool - kvm
 
 # Ubuntu does not require sudo, other distros may!
