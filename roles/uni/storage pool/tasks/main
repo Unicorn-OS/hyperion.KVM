@@ -13,4 +13,4 @@
 
 # Ubuntu does not require sudo, other distros may!
 
-# define-as is Persisent on reboot, but create-as isn't. Use create-as to activate
+# `define-as` is Persisent on reboot, but doesn't start. Use `pool-start` to activate

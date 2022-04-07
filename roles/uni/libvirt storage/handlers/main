@@ -1,6 +1,0 @@
----
-- name: Start Storage pool - iso
-  ansible.builtin.command: virsh pool-create-as --name iso --type dir --target "/home/{{ansible_user}}/.uni/iso"
-
-- name: Start Storage pool - kvm
-  ansible.builtin.command: virsh pool-create-as --name iso --type dir --target "/home/{{ansible_user}}/.uni/vm/kvm"

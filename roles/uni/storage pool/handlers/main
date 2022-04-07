@@ -1,0 +1,6 @@
+---
+- name: Start Storage pool - iso
+  ansible.builtin.command: virsh pool-start iso
+
+- name: Start Storage pool - kvm
+  ansible.builtin.command: virsh pool-start kvm
