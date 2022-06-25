@@ -1,3 +1,5 @@
+roles/.my/feature/vars/main
+
 .this/production/inventory/hosts
 .this/test/inventory/hosts
 ansible.cfg

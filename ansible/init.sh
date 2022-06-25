@@ -1,5 +1,4 @@
-inventory="test"
-this=ansible/.this
+inventory=".this/test"
 
 copy_template(){
   cp $inventory/inventory/hosts.template $inventory/inventory/hosts
@@ -10,8 +9,12 @@ set_user(){
 }
 
 link_template(){
-  ln -srf ansible.cfg ..
-  ln -srf uni ..
+  ln -srf .this/ansible.cfg ..
+  ln -srf .this/uni ..
+}
+
+my_optional_feature(){
+  ln -srf roles/.my/feature/vars/main.example roles/.my/feature/vars/main
 }
 
 checkLocation(){
@@ -27,6 +30,7 @@ main(){
   copy_template
   set_user
   link_template
+  my_optiona_feature
 }
 
 main

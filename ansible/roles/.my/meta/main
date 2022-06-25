@@ -1,4 +1,3 @@
 ---
 dependencies:
-  - role: .my/features
-  
+  - role: .my/feature
