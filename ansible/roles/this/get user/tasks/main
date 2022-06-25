@@ -7,7 +7,3 @@
 - name: available to other roles
   set_fact:
     whoami: "{{iam.stdout}}"
-
-# - name: debug
-#   debug:
-#     msg: "{{whoami}}"

@@ -27,7 +27,6 @@ main(){
   copy_template
   set_user
   link_template
-  # cd -
 }
 
 main

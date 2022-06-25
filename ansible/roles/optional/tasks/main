@@ -1,0 +1,11 @@
+---
+# Optional Features
+- name: tool libguestfs
+  include_role:
+    name: tool/libguestfs
+  when: tool.libguestfs
+
+- name: tool monitor
+  include_role:
+    name: tool/monitor
+  when: tool.monitor
