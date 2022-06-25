@@ -30,7 +30,7 @@ main(){
   copy_template
   set_user
   link_template
-  my_optiona_feature
+  my_optional_feature
 }
 
 main
