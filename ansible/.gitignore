@@ -1,4 +1,4 @@
-roles/.my/feature/vars/main
+roles/.my/feature/vars
 
 .this/production/inventory/hosts
 .this/test/inventory/hosts

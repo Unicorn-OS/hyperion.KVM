@@ -14,7 +14,7 @@ link_template(){
 }
 
 my_optional_feature(){
-  ln -srf roles/.my/feature/vars/main.example roles/.my/feature/vars/main
+  ln -srf roles/.my/feature/vars.example roles/.my/feature/vars
 }
 
 checkLocation(){
