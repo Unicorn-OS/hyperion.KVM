@@ -1,6 +1,5 @@
 roles/.my/feature/vars
 
-.this/production/inventory/hosts
-.this/test/inventory/hosts
+.this/inventory
 ansible.cfg
 uni
