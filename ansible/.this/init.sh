@@ -1,5 +1,5 @@
-this=ansible/.this
 inventory="test"
+this=ansible/.this
 
 copy_template(){
   cp $inventory/inventory/hosts.template $inventory/inventory/hosts
@@ -18,19 +18,21 @@ link_template(){
   ln -srf uni ..
 }
 
-isInThis(){
-  echo use to fix runtime directory location
-  #cd $this
+checkLocation(){
+  SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+  # echo $SCRIPTPATH
+  dirname $SCRIPTPATH
+  cd $SCRIPTPATH
 }
 
 
 main(){
-  isInThis
+  checkLocation
   copy_template
 #  future_set_host
-  set_user
-  link_template
-  cd -
+  # set_user
+  # link_template
+  # cd -
 }
 
 main
