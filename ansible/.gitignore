@@ -1,5 +1,5 @@
 roles/.my/feature/vars
 
 .this/inventory
-ansible.cfg
-uni
+/ansible.cfg
+/uni

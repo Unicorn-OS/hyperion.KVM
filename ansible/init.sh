@@ -1,7 +1,7 @@
 inventory=".this/"
 
 copy_template(){
-  cp .this/inventory.example .this/inventory
+  cp -r .this/inventory.example .this/inventory
 }
 
 set_user(){
