@@ -5,10 +5,6 @@ copy_template(){
   cp $inventory/inventory/hosts.template $inventory/inventory/hosts
 }
 
-future_set_host(){
-  sed -i "s/localhost/$host/" $inventory/inventory/hosts
-}
-
 set_user(){
   sed -i "s/ansible_user=me/ansible_user=$USER/" $inventory/inventory/hosts
 }
@@ -29,9 +25,8 @@ checkLocation(){
 main(){
   checkLocation
   copy_template
-#  future_set_host
-  # set_user
-  # link_template
+  set_user
+  link_template
   # cd -
 }
 
