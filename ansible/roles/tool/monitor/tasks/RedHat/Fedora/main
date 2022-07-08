@@ -1,0 +1,8 @@
+---
+- name: Install virt-top
+  ansible.builtin.dnf:
+    name:
+      - virt-top
+    state: latest
+  become: true
+
