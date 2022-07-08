@@ -1,0 +1,9 @@
+---
+- name: Install libguestfs
+  ansible.builtin.dnf:
+    name:
+      - libguestfs-tools
+      - python3-libvirt
+    state: latest
+  become: true
+
